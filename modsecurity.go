@@ -23,7 +23,7 @@ type Config struct {
 // CreateConfig creates the default plugin configuration.
 func CreateConfig() *Config {
 	return &Config{
-		TimeoutMillis: 2000,
+		TimeoutMillis: 10000,
 		// Safe default: if the max body size was not specified, use 10MB
 		// Note that this will break any file upload with files > 10MB. Hopefully
 		// the user will configure this parameter during the installation.
